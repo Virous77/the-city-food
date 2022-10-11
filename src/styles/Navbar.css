@@ -1,0 +1,205 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: #eaeff8;
+  padding: 2rem 4rem;
+}
+
+.desktop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.logo img {
+  width: 3rem;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.nav-list li {
+  cursor: pointer;
+}
+
+.basket {
+  margin-left: 3rem;
+  position: relative;
+}
+
+.basketIcon {
+  display: flex;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.basket:active,
+.avatar:active {
+  scale: 0.8;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  background-color: #eaeff8;
+  display: flex;
+}
+
+.basketItem {
+  position: absolute;
+  top: -25%;
+  right: -25%;
+  background-color: #e80013;
+  padding: 3.5px;
+  border-radius: 100px;
+  width: 20x;
+  height: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.avatar {
+  position: relative;
+}
+
+.avatar img {
+  width: 2.5rem;
+  margin-left: 1.5rem;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+.dropdown {
+  padding-top: 7.7rem;
+  position: fixed;
+  right: 0;
+  width: 25%;
+  top: 0%;
+  z-index: 11;
+}
+
+.mobileView {
+  display: none;
+}
+
+.cartBar {
+  color: brown;
+  padding-top: 7.7rem;
+  position: fixed;
+  right: 0;
+  width: 30%;
+  top: 0%;
+  z-index: 12;
+}
+
+@media (max-width: 1220px) {
+  .dropdown {
+    width: 35%;
+  }
+}
+
+@media (max-width: 886px) {
+  .dropdown {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1150px) {
+  .cartBar {
+    width: 44%;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobileView {
+    display: block;
+  }
+
+  .mobileSidebar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menuIcon {
+    font-size: 2rem;
+  }
+
+  .crossIcon {
+    font-size: 2rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2rem;
+  }
+
+  .userProfileMobile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .basket {
+    align-self: center;
+    margin-right: 3rem;
+  }
+
+  .basketIcon {
+    font-size: 2rem;
+  }
+
+  .basketItem {
+    top: -15%;
+    right: -17%;
+  }
+
+  .avatar img {
+    width: 2rem;
+  }
+
+  .dropdown {
+    width: 100%;
+  }
+
+  .cartBar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 620px) {
+  .navbar {
+    padding: 2rem 1rem;
+  }
+}

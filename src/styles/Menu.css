@@ -1,0 +1,152 @@
+.menu {
+  padding-top: 3rem;
+  background-color: #2c2c2c;
+  color: whitesmoke;
+  padding-bottom: 2rem;
+}
+
+.menu h1 {
+  text-align: center;
+}
+
+.menuCard {
+  width: 100px;
+  height: 110px;
+  background-color: white;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.hoTitle {
+  align-self: flex-end;
+  justify-self: center;
+}
+
+.menuCard:hover {
+  background-color: #e80013;
+}
+
+.menuRound {
+  background-color: #e80013;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+}
+.menuCard:hover .menuRound {
+  background-color: white;
+}
+
+.IoIcon {
+  display: flex;
+  font-size: 1rem;
+  align-items: center;
+}
+
+.menuCard:hover .IoIcon {
+  color: #e80013;
+}
+
+.p {
+  color: #e80013;
+  margin-top: 0.5rem;
+  text-transform: capitalize;
+}
+
+.menuCard:hover .p {
+  color: white;
+}
+
+.menuIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.active {
+  background-color: #e80013;
+}
+
+.noactive {
+  background-color: white;
+}
+
+.activec {
+  color: #e80013;
+}
+
+.noactivec {
+  color: white;
+}
+
+@media (max-width: 820px) {
+  .menuIcons {
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding-left: 4rem;
+    padding-right: 1rem;
+    width: 100%;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+  }
+}
+
+@media (max-width: 760px) {
+  .menuIcons {
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding-left: 10rem;
+    padding-right: 1rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 672px) {
+  .menuIcons {
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding-left: 14rem;
+    padding-right: 1rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 562px) {
+  .menuIcons {
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding-left: 19rem;
+    padding-right: 1rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 510px) {
+  .menuIcons {
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding-left: 25rem;
+    padding-right: 1rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 444px) {
+  .menuIcons {
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding-left: 23rem;
+    padding-right: 1rem;
+  }
+}

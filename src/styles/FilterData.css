@@ -1,0 +1,37 @@
+.foodContainerss {
+  padding: 2rem 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "a b c";
+  gap: 2rem;
+}
+
+.emptyDish {
+  text-align: center;
+}
+
+.emptyDish img {
+  width: 15rem;
+  height: 15rem;
+}
+
+@media (max-width: 994px) {
+  .foodContainerss {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "b b";
+
+    padding: 2rem 5rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .foodContainerss {
+    grid-template-columns: 1fr;
+    padding: 2rem 2rem;
+    grid-template-areas: "b";
+  }
+}
+
+.fact {
+  grid-area: b;
+}

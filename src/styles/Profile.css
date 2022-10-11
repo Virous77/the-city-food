@@ -1,0 +1,134 @@
+.dropProfile {
+  position: relative;
+  overflow: scroll;
+  background-color: #f2f4f8;
+  inset: 0;
+  overscroll-behavior: contain;
+  height: 100vh;
+}
+
+.dropProfile::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.newItem a,
+.logout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  width: fit-content;
+}
+
+.newItem a:active,
+.logout:active {
+  scale: 0.9;
+}
+
+.profileHead {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  background-color: white;
+  padding: 1rem;
+  position: fixed;
+  width: 25%;
+  right: 0;
+}
+
+.userProfileInfo {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.userProfileInfo img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 100px;
+  box-shadow: 2px 4px 8px rgb(100, 100, 100);
+}
+
+.activeUserData {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.activeUserData h1 {
+  color: #2c2c2c;
+}
+
+.UserNameData {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.userEmail {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.userEmail span {
+  justify-self: start;
+}
+
+.userEmail h3 {
+  justify-self: start;
+}
+
+.profileFixed {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.logout {
+  background-color: red;
+  padding: 7px 2rem;
+  border-radius: 3px;
+  color: white;
+  box-shadow: 2px 4px 8px rgb(100, 100, 100);
+  cursor: pointer;
+}
+
+.newItem {
+  background-color: #2c2;
+  padding: 7px 2rem;
+  border-radius: 3px;
+  color: white;
+  box-shadow: 2px 4px 8px rgb(100, 100, 100);
+  cursor: pointer;
+}
+
+@media (max-width: 1220px) {
+  .profileHead {
+    width: 35%;
+  }
+}
+
+@media (max-width: 886px) {
+  .profileHead {
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .profileHead {
+    width: 100%;
+  }
+
+  .userEmail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
